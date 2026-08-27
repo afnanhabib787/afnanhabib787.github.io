@@ -361,6 +361,14 @@ section[id] { scroll-margin-top: 76px; }
 .contact { color: #fff; background: var(--orange); }
 .contact-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 80px; align-items: end; }
 .contact h2 { margin-top: 25px; font: 700 clamp(40px, 4.8vw, 65px)/1.1 var(--font-head); letter-spacing: -.052em; }
+.social-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
+.social-links a { width: 46px; height: 46px; display: grid; place-items: center; color: #fff; border: 1px solid rgba(255,255,255,.58); transition: color .2s ease, background .2s ease, border-color .2s ease, transform .2s ease; }
+.social-links a:hover { color: var(--orange-light); background: var(--navy); border-color: var(--navy); transform: translateY(-2px); }
+.social-links a:focus-visible { outline-color: var(--navy); }
+.social-links svg { width: 19px; height: 19px; fill: currentColor; }
+.social-monogram { font: 800 16px/1 var(--font-head); letter-spacing: -.08em; }
+.social-monogram sup { position: relative; top: -.18em; margin-left: 1px; font-size: .52em; }
+.social-orcid { letter-spacing: -.12em; }
 .contact-actions { border-top: 1px solid rgba(255,255,255,.42); }
 .contact-actions a { display: grid; grid-template-columns: 120px 1fr auto; gap: 20px; align-items: center; padding: 19px 0; border-bottom: 1px solid rgba(255,255,255,.42); }
 .contact-actions span { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; }
