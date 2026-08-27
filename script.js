@@ -66,3 +66,23 @@ if (reducedMotion || !("IntersectionObserver" in window)) {
   }, { rootMargin: "0px 0px -8%", threshold: 0.08 });
   reveals.forEach((element) => revealObserver.observe(element));
 }
+
+const trackEvent = (name, data = {}) => {
+  if (typeof window.umami?.track === "function") window.umami.track(name, data);
+};
+
+document.querySelectorAll("video[data-analytics-demo]").forEach((video) => {
+  const project = video.dataset.analyticsDemo;
+  video.addEventListener("play", () => trackEvent("demo-play", { project }), { once: true });
+  video.addEventListener("ended", () => trackEvent("demo-complete", { project }), { once: true });
+});
+
+const contactSection = document.querySelector("#contact");
+if (contactSection && "IntersectionObserver" in window) {
+  const contactObserver = new IntersectionObserver((entries, observer) => {
+    if (!entries.some((entry) => entry.isIntersecting)) return;
+    trackEvent("contact-reached");
+    observer.disconnect();
+  }, { threshold: 0.45 });
+  contactObserver.observe(contactSection);
+}
