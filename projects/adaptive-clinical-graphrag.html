@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Adaptive Clinical GraphRAG combines MIMIC-IV, clinical notes, Neo4j, vector retrieval, Text2Cypher, evidence provenance, and an interactive dashboard." />
+  <meta name="theme-color" content="#0b1728" />
+  <title>Adaptive Clinical GraphRAG | Afnan Habib</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css?v=20260826e" />
+</head>
+<body class="project-page graphrag-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header project-header">
+    <nav class="nav container" aria-label="Project navigation">
+      <a class="brand" href="../profile.html" aria-label="Afnan Habib, home"><span class="brand-mark" aria-hidden="true">AH</span><span>AFNAN HABIB</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span><span class="sr-only">Open navigation</span></button>
+      <div class="nav-links" id="nav-links"><a href="../profile.html#work">Work</a><a href="../profile.html#publications">Publications</a><a href="../profile.html#about">About</a><a href="../profile.html#contact">Contact</a><a class="nav-cta" href="../AfnanHabib_CV.pdf" target="_blank">CV <span aria-hidden="true">↗</span></a></div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="project-hero graphrag-hero">
+      <div class="container graphrag-hero-grid">
+        <div class="project-hero-copy reveal in-view">
+          <a class="back-link" href="../profile.html#work">← Back to selected work</a>
+          <p class="kicker"><span></span> Latest Project · Clinical AI</p>
+          <h1>Adaptive Clinical GraphRAG</h1>
+          <p class="project-deck">Hybrid clinical retrieval across structured records, notes, graph paths, and source evidence.</p>
+          <div class="project-hero-actions"><a class="button button-primary" href="#architecture">Explore architecture <span aria-hidden="true">↓</span></a><a class="button button-ghost" href="#dashboard">View system interface <span aria-hidden="true">↓</span></a></div>
+        </div>
+        <dl class="project-facts reveal in-view">
+          <div><dt>Clinical data</dt><dd>MIMIC-IV · MIMIC-IV-Note</dd></div>
+          <div><dt>Knowledge layer</dt><dd>Neo4j medical knowledge graph</dd></div>
+          <div><dt>Retrieval</dt><dd>Vector · Text2Cypher · Hybrid Vector + Cypher</dd></div>
+          <div><dt>Evidence</dt><dd>Source and provenance retrieval · Interactive dashboard</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="project-narrative section">
+      <div class="container narrow-grid">
+        <div class="narrative-label reveal"><p class="eyebrow dark">The retrieval problem</p><span>01</span></div>
+        <div class="narrative-copy reveal"><h2>Clinical evidence lives in both structured records and narrative notes.</h2><p>Adaptive Clinical GraphRAG brings those sources into one retrieval experience. Semantic similarity can surface relevant text, graph queries can follow explicit relationships, and the interface keeps supporting evidence and provenance close to the answer.</p></div>
+      </div>
+    </section>
+
+    <section class="graphrag-architecture section" id="architecture">
+      <div class="container">
+        <header class="section-heading reveal"><h2 class="eyebrow">Adaptive retrieval architecture</h2><p class="section-aside">Semantic search · Graph reasoning · Source evidence</p></header>
+        <ol class="graphrag-flow reveal" aria-label="Adaptive Clinical GraphRAG retrieval flow">
+          <li><span>01</span><strong>Clinical question</strong><p>Natural-language information need</p></li>
+          <li><span>02</span><strong>Vector retrieval</strong><p>Semantic matches from clinical content</p></li>
+          <li><span>03</span><strong>Text2Cypher</strong><p>Question translated into graph retrieval</p></li>
+          <li><span>04</span><strong>Hybrid retrieval</strong><p>Vector evidence + Cypher paths</p></li>
+          <li><span>05</span><strong>Evidence + provenance</strong><p>Supporting sources remain traceable</p></li>
+          <li><span>06</span><strong>Interactive dashboard</strong><p>Query, graph, and evidence in one view</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="graphrag-data section">
+      <div class="container graphrag-data-grid">
+        <div class="reveal"><p class="eyebrow dark">Data + knowledge layer</p><h2>Structured clinical data meets narrative context.</h2><p>The system is organized around MIMIC-IV and MIMIC-IV-Note, with Neo4j providing the graph layer for relationship-aware retrieval.</p></div>
+        <dl class="graphrag-data-list reveal">
+          <div><dt>MIMIC-IV</dt><dd>Structured clinical records</dd></div>
+          <div><dt>MIMIC-IV-Note</dt><dd>Clinical narrative content</dd></div>
+          <div><dt>Neo4j</dt><dd>Medical knowledge graph and Cypher retrieval</dd></div>
+          <div><dt>Hybrid layer</dt><dd>Vector similarity combined with graph traversal</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="graphrag-interface section" id="dashboard">
+      <div class="container">
+        <header class="section-title reveal"><div><p class="eyebrow">Interactive dashboard</p><h2>Query, graph paths, and provenance—together.</h2></div><p>The interface brings retrieval modes and supporting evidence into one inspection surface.</p></header>
+        <figure class="graphrag-dashboard reveal">
+          <div class="graph-ui" aria-hidden="true">
+            <div class="graph-ui-bar"><span>ADAPTIVE CLINICAL GRAPHRAG</span><span>HYBRID RETRIEVAL</span></div>
+            <div class="graph-ui-body">
+              <div class="graph-query-list"><strong>Retrieval</strong><span class="active">Hybrid</span><span>Vector</span><span>Text2Cypher</span><i>MIMIC-IV</i><i>MIMIC-IV-Note</i></div>
+              <div class="graph-canvas">
+                <svg viewBox="0 0 520 330" preserveAspectRatio="none"><path d="M80 164 L196 76 L310 135 L430 62 M196 76 L244 238 L310 135 M244 238 L420 258 L310 135 M80 164 L244 238" /><circle cx="80" cy="164" r="29"/><circle cx="196" cy="76" r="22"/><circle cx="310" cy="135" r="31"/><circle cx="430" cy="62" r="20"/><circle cx="244" cy="238" r="25"/><circle cx="420" cy="258" r="22"/></svg>
+                <span class="graph-node-label node-note">Clinical note</span><span class="graph-node-label node-query">Query</span><span class="graph-node-label node-evidence">Evidence</span><span class="graph-node-label node-source">Source</span>
+                <div class="cypher-trace"><span>TEXT2CYPHER</span><code>MATCH path = (evidence)--(source)</code></div>
+              </div>
+              <div class="graph-evidence"><strong>Evidence trace</strong><div><span>01</span><p>Vector match</p><i>semantic</i></div><div><span>02</span><p>Graph path</p><i>connected</i></div><div><span>03</span><p>Provenance</p><i>linked</i></div><b>Source-grounded answer</b></div>
+            </div>
+          </div>
+          <figcaption><span>Interactive retrieval dashboard</span><span>Portfolio-native system view</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="graphrag-capabilities section">
+      <div class="container scope-grid">
+        <div class="scope-copy reveal"><p class="eyebrow">System capabilities</p><h2>Retrieval that can adapt to the question.</h2><p>The interface exposes complementary retrieval pathways instead of reducing every clinical question to a single search mode.</p></div>
+        <div class="scope-matrix reveal"><div class="matrix-head"><span>Pathway</span><span>Role</span></div><div><strong>Vector</strong><span>Find semantically related clinical content</span></div><div><strong>Text2Cypher</strong><span>Translate questions into graph queries</span></div><div><strong>Hybrid</strong><span>Combine semantic retrieval with connected graph evidence</span></div><div><strong>Provenance</strong><span>Keep retrieved evidence linked to its source context</span></div></div>
+      </div>
+    </section>
+
+    <section class="project-next"><div class="container"><p>Return to portfolio</p><h2>Selected Work</h2><span>Research systems and production AI</span><a class="button button-primary" href="../profile.html#work">Back to work <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer><div class="container footer-grid"><p>© <span id="year"></span> Afnan Habib</p><p>Adaptive Clinical GraphRAG · Clinical retrieval system</p><a href="#main">Back to top ↑</a></div></footer>
+  <script src="../script.js?v=20260826a"></script>
+</body>
+</html>

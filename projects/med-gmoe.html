@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Med-GMoE — Afnan Habib's multimodal and multitask medical CAD research project." />
+  <meta name="theme-color" content="#0b1728" />
+  <title>Med-GMoE | Afnan Habib</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css?v=20260827a" />
+</head>
+<body class="project-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header project-header">
+    <nav class="nav container" aria-label="Project navigation">
+      <a class="brand" href="../profile.html" aria-label="Afnan Habib, home"><span class="brand-mark" aria-hidden="true">AH</span><span>AFNAN HABIB</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span><span class="sr-only">Open navigation</span></button>
+      <div class="nav-links" id="nav-links"><a href="../profile.html#work">Work</a><a href="../profile.html#publications">Publications</a><a href="../profile.html#about">About</a><a href="../profile.html#contact">Contact</a><a class="nav-cta" href="../AfnanHabib_CV.pdf" target="_blank">CV <span aria-hidden="true">↗</span></a></div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="project-hero">
+      <div class="container project-hero-grid">
+        <div class="project-hero-copy reveal in-view"><a class="back-link" href="../profile.html#work">← Back to selected work</a><p class="kicker"><span></span> Related research · 2025–present</p><h1>Med‑GMoE</h1><p class="project-deck">A generalist multimodal and multitask medical CAD framework with modality–task conditioned mixture-of-experts.</p></div>
+        <dl class="project-facts reveal in-view"><div><dt>Research context</dt><dd>Master’s thesis · AISSLab</dd></div><div><dt>Modalities</dt><dd>X-ray · CT · MRI · Ultrasound</dd></div><div><dt>Research status</dt><dd>Manuscript and Korean patent under review</dd></div><div><dt>Core stack</dt><dd>PyTorch · Swin Transformer · DINO · VLMs · LLMs</dd></div></dl>
+      </div>
+    </section>
+
+    <section class="project-system section">
+      <div class="container">
+        <header class="section-heading reveal"><h2 class="eyebrow">System overview</h2><p class="section-aside">Scope diagram · not a results figure</p></header>
+        <figure class="architecture reveal" aria-labelledby="architecture-caption">
+          <div class="architecture-stage architecture-input"><p>01 · Heterogeneous inputs</p><div><span>X-ray</span><span>CT</span><span>MRI</span><span>Ultrasound</span></div></div>
+          <div class="architecture-connector" aria-hidden="true"><span>Modality signal</span></div>
+          <div class="architecture-stage architecture-core"><p>02 · Conditional routing</p><strong>Modality–task<br />conditioned MoE</strong><small>Shared generalist framework</small></div>
+          <div class="architecture-connector" aria-hidden="true"><span>Task signal</span></div>
+          <div class="architecture-stage architecture-output"><p>03 · Clinical tasks</p><div><span>Segmentation</span><span>Classification</span><span>Detection</span><span>Severity assessment</span><span>Report generation</span></div></div>
+          <figcaption id="architecture-caption">A factual map of the modalities, routing concept, and tasks described in the project record. Architecture and result figures can be added when available.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-narrative section">
+      <div class="container narrow-grid">
+        <div class="narrative-label reveal"><p class="eyebrow dark">The research question</p><span>01</span></div>
+        <div class="narrative-copy reveal"><h2>Can heterogeneous medical imaging and clinical tasks be handled within a single model?</h2><p>The project unifies datasets from four medical imaging modalities and conditions expert routing on both modality and task. Its research scope includes pixel-level, image-level, region-level, and language-generation outputs.</p></div>
+      </div>
+    </section>
+
+    <section class="contributions section">
+      <div class="container">
+        <header class="section-title reveal"><div><p class="eyebrow dark">Core contributions</p><h2>What was designed.</h2></div><p>Only contributions supported by the current project record are shown here.</p></header>
+        <div class="contribution-list"><article class="reveal"><span>01</span><h3>Unified framework</h3><p>An end-to-end medical AI framework spanning segmentation, disease classification, object detection, region-level severity assessment, and clinical report generation.</p></article><article class="reveal"><span>02</span><h3>Conditional expert routing</h3><p>A mixture-of-experts design conditioned by imaging modality and clinical task.</p></article><article class="reveal"><span>03</span><h3>Heterogeneous data scope</h3><p>X-ray, CT, MRI, and ultrasound datasets handled within one research framework.</p></article></div>
+      </div>
+    </section>
+
+    <section class="scope-section section">
+      <div class="container scope-grid">
+        <div class="scope-copy reveal"><p class="eyebrow">Research scope</p><h2>Four modalities.<br />Five task families.</h2><p>The current repository does not include dataset names, sample counts, quantitative results, or qualitative outputs. Those claims are intentionally omitted until source material is available.</p></div>
+        <div class="scope-matrix reveal" role="table" aria-label="Research modalities and tasks"><div class="matrix-head" role="row"><span role="columnheader">Modality</span><span role="columnheader">Supported research scope</span></div><div role="row"><strong role="cell">X-ray</strong><span role="cell">Unified framework input</span></div><div role="row"><strong role="cell">CT</strong><span role="cell">Unified framework input</span></div><div role="row"><strong role="cell">MRI</strong><span role="cell">Unified framework input</span></div><div role="row"><strong role="cell">Ultrasound</strong><span role="cell">Unified framework input</span></div><div class="matrix-tasks" role="row"><strong role="cell">Task families</strong><span role="cell">Segmentation · classification · detection · severity assessment · report generation</span></div></div>
+      </div>
+    </section>
+
+    <section class="project-status section">
+      <div class="container status-grid">
+        <div class="reveal"><p class="eyebrow dark">Research record</p><h2>Status and evidence.</h2></div>
+        <div class="status-list"><article class="reveal"><span>Manuscript</span><h3>Med‑GMoE conference paper</h3><p>Under review · 2026</p></article><article class="reveal"><span>Intellectual property</span><h3>Korean patent</h3><p>Under review · submitted May 16, 2026</p></article><article class="reveal"><span>Academic context</span><h3>M.Sc. Artificial Intelligence</h3><p>Sejong University · 2025–2027</p></article></div>
+      </div>
+    </section>
+
+    <section class="project-next"><div class="container"><p>Featured research</p><h2>Med-UniCAD</h2><span>Unified multimodal and multitask medical CAD with Mixture of FreqXperts</span><span class="button button-disabled" aria-label="Med-UniCAD project page unavailable while under review">Under review</span></div></section>
+  </main>
+
+  <footer><div class="container footer-grid"><p>© <span id="year"></span> Afnan Habib</p><p>Med‑GMoE · Related research</p><a href="#main">Back to top ↑</a></div></footer>
+  <script src="../script.js?v=20260826a"></script>
+</body>
+</html>

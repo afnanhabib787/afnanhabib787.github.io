@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Satisfaction of Things (SOT), Afnan Habib's real-time computer-vision work for customer satisfaction and behavioral analytics at Genesis IT Lab Technologies." />
+  <meta name="theme-color" content="#0b1728" />
+  <title>Satisfaction of Things (SOT) | Afnan Habib</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css?v=20260826e" />
+</head>
+<body class="project-page sot-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header project-header">
+    <nav class="nav container" aria-label="Project navigation">
+      <a class="brand" href="../profile.html" aria-label="Afnan Habib, home"><span class="brand-mark" aria-hidden="true">AH</span><span>AFNAN HABIB</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span><span class="sr-only">Open navigation</span></button>
+      <div class="nav-links" id="nav-links"><a href="../profile.html#work">Work</a><a href="../profile.html#publications">Publications</a><a href="../profile.html#about">About</a><a href="../profile.html#contact">Contact</a><a class="nav-cta" href="../AfnanHabib_CV.pdf" target="_blank">CV <span aria-hidden="true">↗</span></a></div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="project-hero sot-hero">
+      <div class="container sot-hero-shell">
+        <div class="sot-hero-grid">
+          <div class="project-hero-copy reveal in-view">
+            <a class="back-link" href="../profile.html#work">← Back to selected work</a>
+            <p class="kicker"><span></span> Industry AI · Genesis IT Lab Technologies · 2023</p>
+            <h1>SOT</h1>
+            <p class="project-deck">AI-powered customer satisfaction and behavioral analytics platform.</p>
+            <div class="project-hero-actions"><a class="button button-primary" href="#workflow">See the workflow <span aria-hidden="true">↓</span></a><a class="button button-ghost" href="#modules">Explore modules <span aria-hidden="true">↓</span></a></div>
+          </div>
+          <figure class="sot-hero-monitor reveal in-view">
+            <div class="sot-monitor" aria-hidden="true">
+              <div class="sot-monitor-bar"><span>CAM 01 · LIVE ANALYSIS</span><span>SOT / 2023</span></div>
+              <div class="sot-vision-stage">
+                <svg class="sot-track-path" viewBox="0 0 620 320" preserveAspectRatio="none"><path d="M52 252 C138 178 196 245 284 156 S442 78 566 118" /><circle cx="52" cy="252" r="4" /><circle cx="284" cy="156" r="4" /><circle cx="566" cy="118" r="4" /></svg>
+                <span class="sot-detection sot-person-one"><i>PERSON 01</i></span>
+                <span class="sot-detection sot-person-two"><i>TRACK 04</i></span>
+                <span class="sot-face-target"><i>FACE</i></span>
+                <span class="sot-gesture-target"><i>GESTURE · GOOD</i></span>
+                <div class="sot-analysis-rail"><span>Face</span><span>Gesture</span><span>Pose</span><span>Track</span></div>
+              </div>
+              <div class="sot-monitor-output"><span>REAL-TIME EVENT</span><strong>Satisfaction response registered →</strong></div>
+            </div>
+            <figcaption><span>Portfolio-native system visualization</span><span>Seven coordinated CV modules</span></figcaption>
+          </figure>
+        </div>
+        <dl class="sot-hero-facts reveal in-view">
+          <div><dt>System</dt><dd>Real-time customer feedback and behavioral analytics</dd></div>
+          <div><dt>Computer vision</dt><dd>Recognition · detection · pose · tracking</dd></div>
+          <div><dt>My scope</dt><dd>Development · evaluation · optimization · deployment</dd></div>
+          <div><dt>Production</dt><dd>ONNX · TensorRT · Triton · Docker</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="project-narrative section">
+      <div class="container narrow-grid">
+        <div class="narrative-label reveal"><p class="eyebrow dark">What SOT is</p><span>01</span></div>
+        <div class="narrative-copy reveal"><h2>Customer feedback translated into real-time visual signals.</h2><p>SOT combined hand gestures and facial analysis with person detection, pose estimation, and persistent tracking. The goal was not a collection of isolated demos: it was a customer-facing feedback platform whose vision modules could be evaluated, optimized, served, and connected to application and analytics infrastructure.</p></div>
+      </div>
+    </section>
+
+    <section class="sot-workflow section" id="workflow">
+      <div class="container">
+        <header class="section-heading reveal"><h2 class="eyebrow">System workflow</h2><p class="section-aside">Video input → perception → production inference → analytics</p></header>
+        <ol class="sot-pipeline reveal" aria-label="SOT processing workflow">
+          <li><span>01</span><strong>Camera / video stream</strong><p>Live customer interaction</p></li>
+          <li><span>02</span><strong>Real-time CV modules</strong><p>Concurrent visual analysis</p></li>
+          <li><span>03</span><strong>Gesture + face + person + pose</strong><p>Structured behavioral signals</p></li>
+          <li><span>04</span><strong>Optimized inference</strong><p>ONNX · TensorRT · Triton</p></li>
+          <li><span>05</span><strong>WebSocket / backend</strong><p>Application integration</p></li>
+          <li><span>06</span><strong>Elasticsearch</strong><p>Backed data handling</p></li>
+          <li><span>07</span><strong>Satisfaction analytics</strong><p>Customer feedback events</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="sot-modules section" id="modules">
+      <div class="container">
+        <header class="section-title reveal"><div><p class="eyebrow dark">Computer-vision modules</p><h2>One product, multiple perception pathways.</h2></div><p>Each module contributed a different signal to the customer-feedback and behavioral-analysis workflow.</p></header>
+        <div class="sot-module-grid">
+          <article class="sot-module reveal">
+            <div class="sot-module-visual gesture-visual" aria-hidden="true"><div class="gesture-hand"><i></i><i></i><i></i><i></i><i></i><b></b></div><span>GESTURE · GOOD</span></div>
+            <div><p class="module-index">01 · Interaction</p><h3>Hand Gesture Recognition</h3><p>Gesture → satisfaction response. Real-time interpretation turns an intuitive hand signal into structured customer feedback.</p></div>
+          </article>
+          <article class="sot-module reveal">
+            <div class="sot-module-visual face-visual" aria-hidden="true"><div class="face-outline"><i></i><i></i><b></b></div><span>FACE · MATCH</span></div>
+            <div><p class="module-index">02 · Identity</p><h3>Face Recognition</h3><p>Face detection and recognition provide a reusable identity-analysis pathway within the broader visual system.</p></div>
+          </article>
+          <article class="sot-module reveal">
+            <div class="sot-module-visual tracking-visual" aria-hidden="true"><svg viewBox="0 0 300 170"><path d="M28 128 C86 86 114 116 158 72 S226 43 274 58" /><circle cx="28" cy="128" r="4"/><circle cx="158" cy="72" r="4"/><circle cx="274" cy="58" r="4"/></svg><i class="track-box t1">01</i><i class="track-box t2">04</i><span>TRACK · PERSISTENT ID</span></div>
+            <div><p class="module-index">03 · Movement</p><h3>Person Detection + Multi-Object Tracking</h3><p>Detection → persistent tracking. People remain associated with stable tracking signals across live video frames.</p></div>
+          </article>
+          <article class="sot-module reveal">
+            <div class="sot-module-visual pose-visual" aria-hidden="true"><svg viewBox="0 0 200 180"><circle cx="100" cy="28" r="12"/><path d="M100 40 L100 92 M100 55 L62 80 M100 55 L142 70 M100 92 L70 142 M100 92 L132 146"/><circle cx="62" cy="80" r="4"/><circle cx="142" cy="70" r="4"/><circle cx="70" cy="142" r="4"/><circle cx="132" cy="146" r="4"/></svg><span>POSE · KEYPOINTS</span></div>
+            <div><p class="module-index">04 · Body signal</p><h3>Pose Estimation</h3><p>Human keypoints capture body configuration and movement as another real-time behavioral signal.</p></div>
+          </article>
+          <article class="sot-module reveal">
+            <div class="sot-module-visual mask-visual" aria-hidden="true"><div class="mask-face"><i></i><b></b></div><span>MASK · DETECTED</span></div>
+            <div><p class="module-index">05 · Detection</p><h3>Mask Detection</h3><p>Real-time face-area analysis identifies mask presence for safety or compliance-oriented application contexts.</p></div>
+          </article>
+          <article class="sot-module reveal">
+            <div class="sot-module-visual demographic-visual" aria-hidden="true"><div class="demo-person"><i></i><b></b></div><div class="demo-bars"><i></i><i></i><i></i></div><span>DEMOGRAPHIC · SIGNAL</span></div>
+            <div><p class="module-index">06 · Survey context</p><h3>Demographic Analysis</h3><p>Customer demographic information can provide additional context for aggregated survey analytics.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sot-deployment section">
+      <div class="container deployment-grid">
+        <div class="deployment-copy reveal"><p class="eyebrow dark">Production engineering</p><h2>From trained models to a served real-time system.</h2><p>SOT’s production work included model benchmarking, conversion, latency optimization, inference serving, containerization, and integration with application and data services.</p></div>
+        <ol class="deployment-stack reveal">
+          <li><span>01</span><div><strong>Develop + evaluate</strong><p>Python · PyTorch · TensorFlow · YOLOv7 · InsightFace</p></div></li>
+          <li><span>02</span><div><strong>Convert</strong><p>ONNX model portability</p></div></li>
+          <li><span>03</span><div><strong>Optimize + serve</strong><p>TensorRT · Triton Inference Server</p></div></li>
+          <li><span>04</span><div><strong>Integrate + deploy</strong><p>WebSockets · backend services · Elasticsearch · Docker</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="sot-contribution section">
+      <div class="container">
+        <header class="section-title reveal"><div><p class="eyebrow">My contribution</p><h2>Engineering across the model lifecycle.</h2></div><p>Contribution statements are limited to the responsibilities documented in the CV.</p></header>
+        <div class="contribution-list sot-contribution-list">
+          <article class="reveal"><span>01</span><h3>Development</h3><p>Developed the real-time customer-feedback platform and integrated gesture, face, demographic, mask, pose, person-detection, and tracking modules.</p></article>
+          <article class="reveal"><span>02</span><h3>Evaluation</h3><p>Evaluated and benchmarked models as part of improving reliability and production readiness.</p></article>
+          <article class="reveal"><span>03</span><h3>Optimization</h3><p>Converted and optimized computer-vision models with ONNX and TensorRT for efficient inference.</p></article>
+          <article class="reveal"><span>04</span><h3>Serving + deployment</h3><p>Served inference through Triton, containerized deployment with Docker, and integrated WebSocket communication and Elasticsearch-backed data management.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sot-stack section">
+      <div class="container stack-grid">
+        <div class="reveal"><p class="eyebrow dark">Technology stack</p><h2>Production computer vision, end to end.</h2></div>
+        <div class="stack-list reveal">
+          <div><span>Model development</span><p>Python · YOLOv7 · InsightFace · PyTorch · TensorFlow</p></div>
+          <div><span>Optimization</span><p>ONNX · TensorRT</p></div>
+          <div><span>Inference + deployment</span><p>Triton Inference Server · Docker</p></div>
+          <div><span>Application + data</span><p>WebSockets · Elasticsearch</p></div>
+          <p class="sot-reference-note">Official project and module context: <a href="https://www.genesislab.com/artificial-intelligence-lab" target="_blank" rel="noreferrer">Genesis Artificial Intelligence Lab <span aria-hidden="true">↗</span></a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-next"><div class="container"><p>Return to portfolio</p><h2>Selected Work</h2><span>Research systems and production AI</span><a class="button button-primary" href="../profile.html#work">Back to work <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer><div class="container footer-grid"><p>© <span id="year"></span> Afnan Habib</p><p>Satisfaction of Things · Genesis IT Lab Technologies · 2023</p><a href="#main">Back to top ↑</a></div></footer>
+  <script src="../script.js?v=20260826a"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="MedXpert-CAD — a multimodal multi-agent clinical imaging system using Model Context Protocol and LLM-driven workflows." />
+  <meta name="theme-color" content="#0b1728" />
+  <title>MedXpert-CAD | Afnan Habib</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css?v=20260827a" />
+</head>
+<body class="project-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header project-header">
+    <nav class="nav container" aria-label="Project navigation">
+      <a class="brand" href="../profile.html" aria-label="Afnan Habib, home"><span class="brand-mark" aria-hidden="true">AH</span><span>AFNAN HABIB</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span><span class="sr-only">Open navigation</span></button>
+      <div class="nav-links" id="nav-links"><a href="../profile.html#work">Work</a><a href="../profile.html#publications">Publications</a><a href="../profile.html#about">About</a><a href="../profile.html#contact">Contact</a><a class="nav-cta" href="../AfnanHabib_CV.pdf" target="_blank">CV <span aria-hidden="true">↗</span></a></div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="project-hero medxpert-hero">
+      <div class="container project-hero-grid">
+        <div class="project-hero-copy reveal in-view">
+          <a class="back-link" href="../profile.html#work">← Back to selected work</a>
+          <p class="kicker"><span></span> MICCAI 2025 · Best Paper</p>
+          <h1>MedXpert-CAD</h1>
+          <p class="project-deck">A multimodal multi-agent clinical imaging system using Model Context Protocol and LLM-driven workflows.</p>
+          <div class="project-hero-actions"><a class="button button-primary" href="#demonstration">Watch demonstration <span aria-hidden="true">↓</span></a><a class="button button-ghost" href="../assets/medxpert-cad/medxpert-cad-paper.pdf" target="_blank">Read paper <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <dl class="project-facts reveal in-view">
+          <div><dt>Clinical modalities</dt><dd>Chest X-ray · Lumbar spine MRI</dd></div>
+          <div><dt>Agent system</dt><dd>Four specialized agents · Three MCP servers</dd></div>
+          <div><dt>Knowledge and tools</dt><dd>PubMed · Google Search · Vector DB · Graph DB</dd></div>
+          <div><dt>Publication</dt><dd>MICCAI 2025 · Published · Best Paper</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="demonstration-section section" id="demonstration">
+      <div class="container demo-grid">
+        <div class="demo-copy reveal"><p class="eyebrow">Full demonstration</p><h2>Watch the multi-agent clinical interface in action.</h2><p>The recording shows the live system interface and its user-facing workflow. Playback is user-controlled, and the full video loads only on this project page.</p><div class="demo-duration"><span>02:16</span><p>Full interface walkthrough</p></div></div>
+        <figure class="full-demo reveal"><video controls playsinline preload="metadata"><source src="../MedXpert-CAD.mp4" type="video/mp4" />Your browser does not support embedded video.</video><figcaption><span>MedXpert-CAD demonstration</span><span>1920 × 1080 · User-controlled playback</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="project-narrative section">
+      <div class="container narrow-grid">
+        <div class="narrative-label reveal"><p class="eyebrow dark">The clinical workflow</p><span>01</span></div>
+        <div class="narrative-copy reveal"><h2>One interface routes imaging questions to specialized clinical tools.</h2><p>MedXpert-CAD coordinates chest X-ray analysis, lumbar MRI assessment, external medical search, and evidence-based response generation through standardized MCP tool interfaces.</p></div>
+      </div>
+    </section>
+
+    <section class="contributions section">
+      <div class="container">
+        <header class="section-title reveal"><div><p class="eyebrow dark">Agent architecture</p><h2>Four agents.<br />Three MCP servers.</h2></div><p>The published system separates supervision, evidence retrieval, X-ray analysis, and lumbar spine MRI assessment.</p></header>
+        <div class="contribution-list">
+          <article class="reveal"><span>01</span><h3>Supervisor agent</h3><p>Interprets the request and routes it to the appropriate modality-specific tool or search workflow.</p></article>
+          <article class="reveal"><span>02</span><h3>Deep search agent</h3><p>Retrieves supporting evidence from PubMed, Google Search, and vector or graph knowledge sources.</p></article>
+          <article class="reveal"><span>03</span><h3>X-ray expert</h3><p>Supports multi-label classification, saliency-based localization, visual question answering, and structured reporting.</p></article>
+          <article class="reveal"><span>04</span><h3>LSS expert</h3><p>Processes lumbar MRI and DICOM data for segmentation, measurements, stenosis analysis, and structured reporting.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section section">
+      <div class="container">
+        <header class="section-title reveal"><div><p class="eyebrow dark">Selected evidence</p><h2>System and imaging results.</h2></div><p>Selected metrics reported in the attached MICCAI paper.</p></header>
+        <dl class="results-list reveal">
+          <div><dt>90%</dt><dd><strong>X-ray task completion</strong><span>GPT-4o · single-agent evaluation</span></dd></div>
+          <div><dt>96%</dt><dd><strong>MRI task completion</strong><span>GPT-4o · single-agent evaluation</span></dd></div>
+          <div><dt>80%</dt><dd><strong>Multi-agent task completion</strong><span>GPT-4o · all-agent scenario</span></dd></div>
+          <div><dt>83%</dt><dd><strong>Contextual relevancy</strong><span>GPT-4o · multi-agent evaluation</span></dd></div>
+          <div><dt>96.43%</dt><dd><strong>Sagittal segmentation DSC</strong><span>Lumbar spine MRI toolkit</span></dd></div>
+          <div><dt>92.71%</dt><dd><strong>Axial segmentation DSC</strong><span>Lumbar spine MRI toolkit</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="limitations-section section">
+      <div class="container narrow-grid">
+        <div class="narrative-label reveal"><p class="eyebrow dark">Research scope</p><span>02</span></div>
+        <div class="narrative-copy reveal"><h2>Current scope and limitations.</h2><p>The reported system focuses on static chest X-ray and lumbar MRI workflows. The paper notes that broader multi-institutional validation is still needed and that dynamic modalities such as ultrasound are outside the current scope.</p></div>
+      </div>
+    </section>
+
+    <section class="research-record section">
+      <div class="container record-grid">
+        <div class="reveal"><p class="eyebrow">Publication</p><h2>MedXpert-CAD: A Multimodal Multi-Agentic System for Clinical Imaging Analysis via Model Context Protocol LLM-Driven Agentic Workflows</h2></div>
+        <div class="record-details reveal">
+          <p>Mukhlis Raza, Saied Salem, <strong>Afnan Habib</strong>, Osamah Abdulmahmod, Hyunwook Kwon, Jamil Hussain, and Mugahed A. Al-Antari.</p>
+          <dl><div><dt>Venue</dt><dd>MICCAI 2025 · Agentic AI for Medicine</dd></div><div><dt>Recognition</dt><dd>Best Paper</dd></div><div><dt>Status</dt><dd>Published</dd></div></dl>
+          <div class="project-hero-actions"><a class="button button-primary" href="../assets/medxpert-cad/medxpert-cad-paper.pdf" target="_blank">View paper <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="https://doi.org/10.1007/978-3-032-06004-4_6" target="_blank" rel="noreferrer">Open DOI <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-next"><div class="container"><p>Featured research</p><h2>Med-UniCAD</h2><span>Unified multimodal and multitask medical CAD with Mixture of FreqXperts</span><span class="button button-disabled" aria-label="Med-UniCAD project page unavailable while under review">Under review</span></div></section>
+  </main>
+
+  <footer><div class="container footer-grid"><p>© <span id="year"></span> Afnan Habib</p><p>MedXpert-CAD · MICCAI 2025</p><a href="#main">Back to top ↑</a></div></footer>
+  <script src="../script.js?v=20260826a"></script>
+</body>
+</html>
